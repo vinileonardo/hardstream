@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>hard br 1</title>
+  <title>hard br</title>
   <style>
     /* CSS para layout responsivo */
     body {
@@ -18,12 +18,13 @@
 
     .video-container {
       width: 100%; /* Vídeo ocupa 100% da largura */
+      transition: width 0.5s ease; /* Transição suave */
     }
     
-
     .chat-container {
-      width: 20%; /* Chat ocupa 0% da largura */
+      width: 20%; /* Chat ocupa 20% da largura */
       overflow: hidden; /* Ocultar conteúdo do chat */
+      transition: width 0.5s ease; /* Transição suave */
     }
 
     .video-container iframe, .chat-container iframe {
@@ -45,6 +46,7 @@
       align-items: center;
       justify-content: center;
       cursor: pointer;
+      transition: background-color 0.5s ease; /* Transição suave */
     }
 
     .chat-toggle.hidden {
@@ -69,7 +71,7 @@
   </div>
   <div class="chat-toggle" onclick="toggleChat()">
     <span class="icon">X </span>
-    - Fechar
+    &nbsp; - Fechar
   </div>
   <script>
     // Função para alternar a visibilidade do chat
