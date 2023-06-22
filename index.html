@@ -1,1 +1,34 @@
-<video autoplay="" playsinline="" class="sc-cWSHoV hwGGAr" src="blob:https://player.angelthump.com/dd270c3e-a63c-42d4-9867-5da4a32bf62e"></video>
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Sua Página</title>
+  <style>
+    /* CSS para layout responsivo */
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    .video-container, .chat-container {
+      flex: 1 0 50%;
+    }
+    @media (max-width: 600px) {
+      .video-container, .chat-container {
+        flex: 1 0 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="video-container">
+      <!-- Substitua URL_DO_VIDEO pelo URL do vídeo que você deseja incorporar -->
+      <iframe title="Player" width="100%" height="100%" marginheight="0" marginwidth="0" frameborder="0" allow="autoplay; fullscreen" allowtransparency="true" allowfullscreen="" src="https://player.angelthump.com/?channel=squeej" scrolling="no" seamless=""></iframe>
+    </div>
+    <div class="chat-container">
+        <script id="cid0020000348427132850" data-cfasync="false" async src="//st.chatango.com/js/gz/emb.js" style="width: 100%;height: 100%;">{"handle":"hardstream","arch":"js","styles":{"a":"707070","b":100,"c":"FFFFFF","d":"FFFFFF","k":"707070","l":"707070","m":"707070","n":"FFFFFF","p":"10","q":"707070","r":100,"t":0,"usricon":0,"surl":0,"cnrs":"0.35","fwtickm":1}}</script>
+    </div>
+  </div>
+  
+  <!-- Insira seu script JS aqui, se necessário -->
+</body>
+</html>
