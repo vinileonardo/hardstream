@@ -9,7 +9,6 @@
       color: #fff; /* Cor de texto semelhante ao Twitch */
       font-family: Arial, sans-serif; /* Fonte semelhante ao Twitch */
       margin: 0; /* Remover margens padrão do body */
-      overflow: hidden; /* Remover barras de rolagem */
     }
 
     .container {
@@ -62,7 +61,6 @@
 </head>
 <body>
   <div class="container">
-    
     <div class="video-container">
       <!-- Substitua URL_DO_VIDEO pelo URL do vídeo que você deseja incorporar -->
       <iframe title="Player" width="100%" height="100%" marginheight="0" marginwidth="0" frameborder="0" allow="autoplay; fullscreen" allowtransparency="true" allowfullscreen="" src="https://player.angelthump.com/?channel=squeej" scrolling="no" seamless=""></iframe>
@@ -87,7 +85,7 @@
       if (chatContainer.classList.contains('hidden')) {
         chatToggle.innerHTML = '<span class="icon">&#10003;</span> - Abrir';
       } else {
-        chatToggle.innerHTML = '<span class="icon">X</span>Fechar';
+        chatToggle.innerHTML = '<span class="icon">X</span> - Fechar';
       }
     }
   </script>
